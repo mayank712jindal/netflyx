@@ -1,18 +1,31 @@
 import React from 'react';
+import Swiper from 'swiper';
+// import 'swiper/swiper-bundle.css';
+import './index.css';
 
-const Card = props => {
+let starter = "https://image.tmdb.org/t/p/w500";
+
+const Card = (props) => {
     return (
         <>
-            <div className="card">
-                <img className="card-img-top" src="props" alt="Poster" />
-                <div className="card-body">
-                    <h5 className="card-title">fsd</h5>
-                    <p className="card-text">dfd</p>
-                    <a href="" className="btn btn-primary">fdfd</a>
+            <div className="swiper-container mySwiper">
+                <div className="swiper-wrapper">
+                    <div className="swiper-slide"><img src={starter + props.img_path} alt="Poster" /></div>
                 </div>
             </div>
         </>
     )
 }
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    loop: true,
+    autoplay: {
+        delay: 1000,
+
+    }
+});
+
 
 export default Card

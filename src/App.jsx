@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Card from './Card';
 import "./index.css";
 import requests from './Requests';
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
 
 
 const baseURL = "https://api.themoviedb.org/3";
@@ -25,36 +27,40 @@ const App = () => {
     return (
 
         <>
-            <div className="row flex-row flex-nowrap mt-4 pb-4 pt-2" style={{
-                overflowX: "auto",
-            }}>
-                {
-                    horror.map(item => {
-                        return (<Card
-                            img_path={item.backdrop_path}
-                            title={item.title}
-                            overview={item.overview}
-                            id={item.id}
-                        />)
-                    })
-                }
+            <div className="swiper-container mySwiper">
+                <div className="swiper-wrapper">
+                    {
+                        horror.map(item => {
+                            return (<Card
+                                img_path={item.backdrop_path}
+                                title={item.title}
+                                overview={item.overview}
+                                id={item.id}
+                            />)
+                        })
+                    }
+                </div>
             </div>
-            <div className="row flex-row flex-nowrap mt-4 pb-4 pt-2" style={{
-                overflowX: "auto",
-            }}>
-                {
-                    romantic.map(item => {
-                        return (<Card
-                            img_path={item.backdrop_path}
-                            title={item.title}
-                            overview={item.overview}
-                            id={item.id}
-                        />)
-                    })
-                }
-            </div>
+            { swiper.update}
+
         </>
     )
 }
-
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 10,
+    spaceBetween: 10,
+    freeMode: true,
+    loop: false,
+    loadPrevNextAmount: 2,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false
+    },
+    rebuildOnUpdate: true,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+    }
+});
+// alert(swiper.length)
 export default App;

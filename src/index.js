@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Navbar from './Navbar';
 import App from './App.jsx';
+import Swiper from 'swiper';
 
 ReactDOM.render(
   <>

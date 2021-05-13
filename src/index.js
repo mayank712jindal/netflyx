@@ -4,14 +4,36 @@ import './index.css';
 import Navbar from './Navbar';
 import App from './App.jsx';
 import Swiper from 'swiper';
+import Jumbotron from './Jumbotron.jsx';
 
 ReactDOM.render(
   <>
     <Navbar />
+    <Jumbotron />
     <App />
   </>,
   document.getElementById('root')
 );
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  freeMode: true,
+  rebuildOnUpdate: true,
+  observer: true,
+  breakpoints: {
+    450: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 3
+    },
+    999: {
+      slidesPerView: 6
+    }
+  }
+});
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

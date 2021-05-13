@@ -5,9 +5,9 @@ const Jumbotron = () => {
     return (
         <>
             <div className="jumbotron jumbotron-fluid">
-                <div className="container text-light justify-content-center text-center pt-5">
-                    <h1 className="display-4">Fluid jumbotron</h1>
-                    <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                <div className="container text-light text-center pt-5 ">
+                    <h3 className="display-5 font-weight-bold">"See What's Next"</h3>
+                    <h1 className="display-4 font-weight-bold">Binge watch the Best Shows, Movies and more.</h1>
                 </div>
             </div>
         </>

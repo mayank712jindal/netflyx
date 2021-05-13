@@ -5,12 +5,14 @@ import Navbar from './Navbar';
 import App from './App.jsx';
 import Swiper from 'swiper';
 import Jumbotron from './Jumbotron.jsx';
+import Footer from './Footer.jsx';
 
 ReactDOM.render(
   <>
     <Navbar />
     <Jumbotron />
     <App />
+    <Footer />
   </>,
   document.getElementById('root')
 );

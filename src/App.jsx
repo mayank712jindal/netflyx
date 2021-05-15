@@ -4,7 +4,12 @@ import "./index.css";
 import requests from './Requests';
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
-
+import Section2 from './Section2';
+import Section1 from './Section1';
+import home from './img/home.svg';
+import movie from './img/movie.svg';
+import movie2 from './img/movie2.svg';
+import stream from './img/stream.svg';
 
 const baseURL = "https://api.themoviedb.org/3";
 const horrorMovies = () => fetch(baseURL + requests.fetchHorrorMovies).then(res => res.json());
@@ -42,6 +47,12 @@ const App = () => {
     return (
 
         <>
+            <Section2
+                src={home}
+                heading="Enjoy on your TV"
+                description="Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more."
+            />
+
             <h1 className="heading" id="trending">Trending</h1>
             <div className="swiper-container mySwiper">
                 <div className="swiper-wrapper">
@@ -72,7 +83,14 @@ const App = () => {
                     }
                 </div>
             </div>
-            <h1 className="heading" id="original">Netflix Originals </h1>
+
+            <Section1
+                src={stream}
+                heading="Download your shows to watch offline."
+                description="Save your favourites easily and always have something to watch."
+            />
+
+            <h1 className="heading" id="original">Originals </h1>
             <div className="swiper-container mySwiper">
                 <div className="swiper-wrapper">
                     {
@@ -102,6 +120,13 @@ const App = () => {
                     }
                 </div>
             </div>
+
+            <Section2
+                src={movie2}
+                heading="Watch everywhere."
+                description="Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."
+            />
+
             <h1 className="heading" id="romance">Romance</h1>
             <div className="swiper-container mySwiper">
                 <div className="swiper-wrapper">
@@ -132,6 +157,14 @@ const App = () => {
                     }
                 </div>
             </div>
+
+
+            <Section1
+                src={movie}
+                heading="Create profiles for children."
+                description="Send children on adventures with their favourite characters in a space made just for them—free with your membership."
+            />
+
             <h1 className="heading" id="horror">Horror Movies </h1>
             <div className="swiper-container mySwiper">
                 <div className="swiper-wrapper">

@@ -6,14 +6,12 @@ import App from './App';
 import Swiper from 'swiper';
 import Jumbotron from './Jumbotron';
 import Footer from './Footer.jsx';
-import TvSection from './Section1';
 
 ReactDOM.render(
   <>
     <Navbar />
     <Jumbotron />
     <App />
-    <TvSection />
     <Footer />
   </>,
   document.getElementById('root')

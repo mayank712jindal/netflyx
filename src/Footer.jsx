@@ -4,7 +4,7 @@ import './index.css';
 const Footer = () => {
     return (
         <>
-            <div className="container-fluid p-3 pt-4 py-2 mt-3 footer justify-content-center d-flex">
+            <div className="container-fluid p-3 py-2 mt-2 footer justify-content-center d-flex">
                 <div className="container row">
                     <div className="col-12 p-2">
                         <h6>Questions? Call 977-972-9032</h6>

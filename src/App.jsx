@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Card from './Card';
 import "./index.css";
 import requests from './Requests';
-import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
 import Section2 from './Section2';
 import Section1 from './Section1';
@@ -200,23 +199,5 @@ const App = () => {
 
     )
 }
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    freeMode: true,
-    rebuildOnUpdate: true,
-    observer: true,
-    breakpoints: {
-        450: {
-            slidesPerView: 2
-        },
-        768: {
-            slidesPerView: 3
-        },
-        999: {
-            slidesPerView: 6
-        }
-    }
-});
-// alert(swiper.length)
+
 export default App;

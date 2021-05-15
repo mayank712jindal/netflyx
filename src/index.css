@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -8,24 +9,16 @@ body {
   background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
-  display: none;
-}
 /* heading of all carousels */
 .heading {
   color: #888888;
-  padding: 5px 10px;
+  padding: 10px 10px;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
+/* Cards and Swiper Start */
 .swiper-container {
   width: 100%;
   height: 200px;
@@ -60,6 +53,7 @@ code {
   object-fit: cover;
 }
 
+/* on hover text div */
 .movieDetails {
   transition: 0.5s ease;
   opacity: 0;
@@ -70,6 +64,7 @@ code {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .swiper-slide:hover img {
   opacity: 0.4;
 }
@@ -88,6 +83,13 @@ code {
   transform: scale(1.5);
   box-shadow: 0px 5px 10px 8px #888888;
 }
+
+.swiper-container {
+  margin-bottom: 50px;
+  border-bottom: #222 solid 12px;
+}
+/* Swiper and Card end */
+
 /* Jumbotron */
 .jumbotron {
   height: 80vh;
@@ -95,13 +97,18 @@ code {
     url("https://assets.nflxext.com/ffe/siteui/vlv3/7a33204b-893d-4792-8494-b9d6cbc73848/8ed3a98a-e2c2-488d-9583-93634199485d/IN-en-20210502-popsignuptwoweeks-perspective_alpha_website_medium.jpg")
       no-repeat fixed;
   background-size: cover;
-  border-bottom: #222 solid 10px;
+  border-bottom: #222 solid 12px;
 }
 
+.jumbotron h1 {
+  font-size: 4.5rem;
+}
+/* Jumbotron end */
+
+/* Footer Start */
 .footer {
   background-color: black;
   color: #888888;
-  border-top: #222 solid 10px;
   line-height: 35px;
 }
 .footer ul {
@@ -118,13 +125,16 @@ code {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-}
-.swiper-container {
-  margin-bottom: 50px;
-  border-bottom: #222 solid 10px;
+  padding: 5px;
 }
 
-/* like icon css */
+.footer .col-md-3 li {
+  padding: 5px;
+  font-size: 1.1rem;
+}
+/* Footer End */
+
+/* like icon on Movie slide */
 .add-fav {
   padding: 5px;
   cursor: pointer;
@@ -153,10 +163,10 @@ code {
 
 /* like icon closed */
 
-/* sections set */
+/* information sections */
 .section1,
 .section2 {
-  border-bottom: #222 solid 10px;
+  border-bottom: #222 solid 12px;
   color: aliceblue;
 }
 
@@ -170,4 +180,16 @@ code {
 .section1 p,
 .section2 p {
   font-size: 2rem;
+}
+/* section end */
+
+/* ************************************************************************************************************** */
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .section1 img,
+  .section2 img {
+    height: 22rem;
+    width: 22rem;
+    padding: 5px;
+  }
 }

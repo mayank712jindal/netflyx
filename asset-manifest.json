@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/netflyx/static/css/main.1d97b22c.chunk.css",
+    "main.js": "/netflyx/static/js/main.6bdc2eab.chunk.js",
+    "main.js.map": "/netflyx/static/js/main.6bdc2eab.chunk.js.map",
+    "runtime-main.js": "/netflyx/static/js/runtime-main.94def9ed.js",
+    "runtime-main.js.map": "/netflyx/static/js/runtime-main.94def9ed.js.map",
+    "static/css/2.5c793f43.chunk.css": "/netflyx/static/css/2.5c793f43.chunk.css",
+    "static/js/2.6c40452e.chunk.js": "/netflyx/static/js/2.6c40452e.chunk.js",
+    "static/js/2.6c40452e.chunk.js.map": "/netflyx/static/js/2.6c40452e.chunk.js.map",
+    "index.html": "/netflyx/index.html",
+    "static/css/2.5c793f43.chunk.css.map": "/netflyx/static/css/2.5c793f43.chunk.css.map",
+    "static/css/main.1d97b22c.chunk.css.map": "/netflyx/static/css/main.1d97b22c.chunk.css.map",
+    "static/js/2.6c40452e.chunk.js.LICENSE.txt": "/netflyx/static/js/2.6c40452e.chunk.js.LICENSE.txt",
+    "static/media/home.c3169fec.svg": "/netflyx/static/media/home.c3169fec.svg",
+    "static/media/movie.7881068b.svg": "/netflyx/static/media/movie.7881068b.svg",
+    "static/media/movie2.03cea1f7.svg": "/netflyx/static/media/movie2.03cea1f7.svg",
+    "static/media/stream.1e840284.svg": "/netflyx/static/media/stream.1e840284.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94def9ed.js",
+    "static/css/2.5c793f43.chunk.css",
+    "static/js/2.6c40452e.chunk.js",
+    "static/css/main.1d97b22c.chunk.css",
+    "static/js/main.6bdc2eab.chunk.js"
+  ]
+}
